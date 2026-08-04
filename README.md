@@ -1,2 +1,2 @@
-# Leetcode-problems
-DSA journey
+# Leetcode
+DSA 
