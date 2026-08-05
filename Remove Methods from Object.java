@@ -12,11 +12,9 @@ class Solution {
             graph[edge[0]].add(edge[1]);
         }
 
-        // Find all suspicious methods
         boolean[] suspicious = new boolean[n];
         dfs(k, graph, suspicious);
 
-        // Check if any non-suspicious method invokes a suspicious one
         for (int[] edge : invocations) {
             int from = edge[0];
             int to = edge[1];
@@ -30,7 +28,6 @@ class Solution {
             }
         }
 
-        // Return remaining methods
         List<Integer> ans = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             if (!suspicious[i]) {
