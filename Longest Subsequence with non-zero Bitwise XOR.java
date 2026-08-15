@@ -11,17 +11,16 @@ class Solution {
             }
         }
 
-        // XOR of entire array is non-zero
+      
         if (xor != 0) {
             return nums.length;
         }
 
-        // All elements are zero
         if (!hasNonZero) {
             return 0;
         }
 
-        // Total XOR is zero, but there is a non-zero element
+        
         return nums.length - 1;
     }
 }
